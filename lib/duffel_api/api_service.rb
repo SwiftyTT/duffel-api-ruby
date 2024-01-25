@@ -13,16 +13,17 @@ module DuffelAPI
     # @param base_url [String] A test or live mode access token
     # @param access_token [String] The URL of the Duffel API
     # @param default_headers [Hash] The headers to include by default in HTTP requests
+    # @param request_logger [Object]
     # @return [APIService]
-    def initialize(base_url, access_token, default_headers:)
+    def initialize(base_url, access_token, default_headers:, request_logger: nil)
       @base_url = base_url
       root_url, @path_prefix = unpack_url(base_url)
 
-      @connection = Faraday.new(root_url) do |faraday|
-        faraday.request :rate_limiter
-        faraday.response :raise_duffel_errors
+      @connection = Faraday.new(root_url) do |conn|
+        conn.request :rate_limiter
+        conn.response :raise_and_log_duffel_errors, logger: request_logger
 
-        faraday.adapter(:net_http)
+        conn.adapter(:net_http)
       end
 
       @headers = default_headers.merge("Authorization" => "Bearer #{access_token}")

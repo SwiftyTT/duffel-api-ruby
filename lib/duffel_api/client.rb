@@ -10,9 +10,16 @@ module DuffelAPI
     #
     # @param access_token [String] A test or live mode access token
     # @param base_url [String] The URL of the Duffel API
+    # @param request_logger [Object] Logger
     # @return [Client]
-    def initialize(access_token:, base_url: "https://api.duffel.com")
-      @api_service = APIService.new(base_url, access_token, **default_options)
+    def initialize(access_token:, base_url: "https://api.duffel.com", request_logger: nil)
+      @request_logger = request_logger
+
+      @api_service = APIService.new(
+        base_url,
+        access_token,
+        **default_options,
+      )
     end
 
     # @return [Services::AircraftService]
@@ -104,6 +111,7 @@ module DuffelAPI
           "User-Agent" => "Duffel/#{API_VERSION} duffel_api_ruby/#{DuffelAPI::VERSION}",
           "Content-Type" => "application/json",
         },
+        request_logger: @request_logger,
       }
     end
   end
