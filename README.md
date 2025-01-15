@@ -1,6 +1,6 @@
-> [!WARNING] 
+> [!WARNING]
 > This client library is not currently being supported by Duffel due to a lack of adoption.
-> 
+>
 > You're welcome to fork the repositories and continue maintaining them for your own use.
 >
 > If, in the future, there's sufficient demand for a particular client library, we'll reconsider our decision to officially support it.
@@ -21,15 +21,15 @@ A Ruby client library for the [Duffel API](https://duffel.com/docs/api).
 
 ## Requirements
 
-* Ruby 2.6 or later
-* A Duffel API access token (get started [here](https://duffel.com/docs/guides/quick-start) ✨)
+- Ruby 2.6 or later
+- A Duffel API access token (get started [here](https://duffel.com/docs/guides/quick-start) ✨)
 
 ## Installation
 
 In most cases, you'll want to add `duffel_api` to your project as a dependency by listing it in your `Gemfile`, and then running `bundle`:
 
 ```ruby
-gem "duffel_api", "~> 0.4.0"
+gem "duffel_api", "~> 0.5.0"
 ```
 
 You can install `duffel_api` outside of the context of a project by running `gem install duffel_api` - for example if you want to play with the client library in `irb`.
@@ -52,14 +52,14 @@ client = DuffelAPI::Client.new(access_token: "duffel_test_000000000")
 
 ### Resources in the Duffel API
 
-In this readme, we'll use the term "resources" to refer to the different Duffel concepts that you can *act on* in the API - for example airports, offers, orders and payment intents.
+In this readme, we'll use the term "resources" to refer to the different Duffel concepts that you can _act on_ in the API - for example airports, offers, orders and payment intents.
 
 We'll refer to instances of each of these resources - an airport, an offer, a payment intent - as "records".
 
 In the [Duffel API reference](https://duffel.com/docs/api/), the resources are listed in the sidebar. For each resource, you'll find:
 
-* a schema, which describes the data attributes we expose for each record from this resource
-* a list of actions you can perform related to that resource (e.g. for [Orders](https://duffel.com/docs/api/orders), you can "Get a single order", "Update a single order", "List orders" and "Create an order")
+- a schema, which describes the data attributes we expose for each record from this resource
+- a list of actions you can perform related to that resource (e.g. for [Orders](https://duffel.com/docs/api/orders), you can "Get a single order", "Update a single order", "List orders" and "Create an order")
 
 The Ruby client library is structured around these resources. Each resource has its own "service" which you use to perform actions. These services are accessible from your `Client` instance:
 
@@ -69,7 +69,7 @@ client.offers
 client.payment_intents
 ```
 
-__To see what actions are available for each resource, check out the definitions for the service classes [here](https://github.com/duffelhq/duffel-api-ruby/tree/main/lib/duffel_api/services).__
+**To see what actions are available for each resource, check out the definitions for the service classes [here](https://github.com/duffelhq/duffel-api-ruby/tree/main/lib/duffel_api/services).**
 
 ### Creating a record
 
@@ -139,7 +139,7 @@ When you call `client.seat_maps.list(params: { offer_id: "off_123" })`, all of t
 
 ### Fetching single records
 
-Many resources in the Duffel API allow you fetch a single record (e.g. *an* airport, *a* payment intent) if you know its ID.
+Many resources in the Duffel API allow you fetch a single record (e.g. _an_ airport, _a_ payment intent) if you know its ID.
 
 You do that using the `#get` method on a resource like this:
 
@@ -208,9 +208,9 @@ You can rescue all of these errors and get important information with them using
 
 If the client library is unable to connect to Duffel, an appropriate exception will be raised, for example:
 
-* `Faraday::TimeoutError` in case of a timeout
-* `Faraday::ConnectionFailed` in case of a connection issue (e.g. problems with DNS resolution)
-* `DuffelAPI::Errors::Error` for `5XX` errors returned from by Duffel's infrastructure, but not by the API itself (e.g. a load balancer)
+- `Faraday::TimeoutError` in case of a timeout
+- `Faraday::ConnectionFailed` in case of a connection issue (e.g. problems with DNS resolution)
+- `DuffelAPI::Errors::Error` for `5XX` errors returned from by Duffel's infrastructure, but not by the API itself (e.g. a load balancer)
 
 ### Accessing the raw API response
 
