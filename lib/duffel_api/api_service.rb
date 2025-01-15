@@ -26,7 +26,7 @@ module DuffelAPI
         conn.adapter(:net_http)
       end
 
-      @headers = default_headers.merge("Authorization" => "Bearer #{access_token}")
+      @headers = default_headers.merge("Authorization" => "Bearer #{access_token}", "Duffel-Version" => "v2")
     end
 
     # Makes a request to the API, including any defauot headers
