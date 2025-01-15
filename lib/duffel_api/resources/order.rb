@@ -4,6 +4,7 @@
 module DuffelAPI
   module Resources
     class Order < BaseResource
+      attr_reader :available_actions
       attr_reader :base_amount
       attr_reader :base_currency
       attr_reader :booking_reference
@@ -28,6 +29,7 @@ module DuffelAPI
       def initialize(object, response = nil)
         @object = object
 
+        @available_actions = object["available_actions"]
         @base_amount = object["base_amount"]
         @base_currency = object["base_currency"]
         @booking_reference = object["booking_reference"]

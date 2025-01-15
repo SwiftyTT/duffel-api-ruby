@@ -4,7 +4,7 @@
 module DuffelAPI
   module Resources
     class Offer < BaseResource
-      attr_reader :allowed_passenger_identity_document_types
+      attr_reader :supported_passenger_identity_document_types
       attr_reader :available_services
       attr_reader :base_amount
       attr_reader :base_currency
@@ -28,8 +28,8 @@ module DuffelAPI
       def initialize(object, response = nil)
         @object = object
 
-        @allowed_passenger_identity_document_types =
-          object["allowed_passenger_identity_document_types"]
+        @supported_passenger_identity_document_types =
+          object["supported_passenger_identity_document_types"]
         @available_services = object["available_services"]
         @base_amount = object["base_amount"]
         @base_currency = object["base_currency"]

@@ -294,7 +294,7 @@
         "base_currency": "GBP",
         "base_amount": "311.00",
         "available_services": [],
-        "allowed_passenger_identity_document_types": [
+        "supported_passenger_identity_document_types": [
             "passport"
         ]
     }
