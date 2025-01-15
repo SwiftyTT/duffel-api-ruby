@@ -5,14 +5,24 @@ require "duffel_api"
 client = DuffelAPI::Client.new(
   access_token: ENV.fetch("DUFFEL_ACCESS_TOKEN"),
 )
+passenger = {
+  title: "mr",
+  gender: "m",
+  given_name: "Tim",
+  family_name: "Rogers",
+  born_on: "1993-04-01",
+  phone_number: "+441290211999",
+  email: "tim@duffel.com",
+}
 
 # 365 days from now
 departure_date = (Time.now + (60 * 60 * 24 * 365)).strftime("%Y-%m-%d")
+birth_year = 1993
 
 offer_request = client.offer_requests.create(params: {
   cabin_class: "economy",
   passengers: [{
-    age: 28,
+    age: Date.today.year - passenger[:born_on].split("-").first.to_i,
   }],
   slices: [{
     # We use a non-sensical route to make sure we get speedy, reliable Duffel Airways
@@ -53,13 +63,7 @@ order = client.orders.create(params: {
   passengers: [
     {
       id: priced_offer.passengers.first["id"],
-      title: "mr",
-      gender: "m",
-      given_name: "Tim",
-      family_name: "Rogers",
-      born_on: "1993-04-01",
-      phone_number: "+441290211999",
-      email: "tim@duffel.com",
+      **passenger,
     },
   ],
 })
@@ -71,7 +75,7 @@ order_change_request = client.order_change_requests.create(params: {
   slices: {
     add: [{
       cabin_class: "economy",
-      departure_date: "2022-12-25",
+      departure_date: departure_date,
       origin: "LHR",
       destination: "STN",
     }],
