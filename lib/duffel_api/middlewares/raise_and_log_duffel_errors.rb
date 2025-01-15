@@ -8,7 +8,7 @@ module DuffelAPI
       UNEXPECTED_ERROR_STATUSES = (501..599).freeze
       EXPECTED_ERROR_STATUSES = (400..500).freeze
 
-      def initialize(app, options)
+      def initialize(app, options = {})
         super(app)
         @logger = options[:logger]
       end
@@ -17,7 +17,7 @@ module DuffelAPI
       #
       # @param [Faraday::Env] env
       def on_complete(env)
-        @logger.call(env) if @logger.present?
+        @logger.call(env) if @logger
 
         if !json?(env) || UNEXPECTED_ERROR_STATUSES.include?(env.status)
           response = Response.new(env.response)
