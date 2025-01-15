@@ -1,3 +1,7 @@
+## 0.4.1 - 2025-01-15
+
+- Merge changes with `duffelhq`
+
 ## [0.4.0] - 2022-02-15
 
 - Use the latest API version, `v1`
