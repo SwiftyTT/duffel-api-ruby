@@ -5,6 +5,9 @@ module DuffelAPI
   module Resources
     class Offer < BaseResource
       attr_reader :supported_passenger_identity_document_types
+      # Adding backwards compatibility for the old method name
+      alias_method :allowed_passenger_identity_document_types, :supported_passenger_identity_document_types
+
       attr_reader :available_services
       attr_reader :base_amount
       attr_reader :base_currency

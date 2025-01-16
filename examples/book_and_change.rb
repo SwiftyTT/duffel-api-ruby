@@ -17,12 +17,11 @@ passenger = {
 
 # 365 days from now
 departure_date = (Time.now + (60 * 60 * 24 * 365)).strftime("%Y-%m-%d")
-birth_year = 1993
 
 offer_request = client.offer_requests.create(params: {
   cabin_class: "economy",
   passengers: [{
-    age: Date.today.year - passenger[:born_on].split("-").first.to_i,
+    age: Date.today.year - Date.parse(passenger[:born_on]).year
   }],
   slices: [{
     # We use a non-sensical route to make sure we get speedy, reliable Duffel Airways

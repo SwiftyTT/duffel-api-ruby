@@ -30,6 +30,11 @@ module DuffelAPI
 
         super(object, response)
       end
+
+      # Backwards compatibility for the old method name
+      def type
+        @object["type"]
+      end
     end
   end
 end
