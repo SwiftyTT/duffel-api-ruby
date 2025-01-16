@@ -1,3 +1,7 @@
+## 0.5.0 - 2025-01-16
+
+- Add request and response logging
+
 ## 0.4.1 - 2025-01-15
 
 - Merge changes with `duffelhq`

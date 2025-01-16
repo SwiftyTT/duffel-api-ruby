@@ -2,10 +2,10 @@
 
 require "spec_helper"
 
-describe DuffelAPI::Middlewares::RaiseDuffelErrors do
+describe DuffelAPI::Middlewares::RaiseAndLogDuffelErrors do
   let(:connection) do
     Faraday.new do |faraday|
-      faraday.response :raise_duffel_errors
+      faraday.response :raise_and_log_duffel_errors
       faraday.adapter :net_http
     end
   end

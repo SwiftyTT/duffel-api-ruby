@@ -4,14 +4,21 @@ require "faraday"
 
 module DuffelAPI
   module Middlewares
-    class RaiseDuffelErrors < Faraday::Middleware
+    class RaiseAndLogDuffelErrors < Faraday::Middleware
       UNEXPECTED_ERROR_STATUSES = (501..599).freeze
       EXPECTED_ERROR_STATUSES = (400..500).freeze
+
+      def initialize(app, options = {})
+        super(app)
+        @logger = options[:logger]
+      end
 
       # Handles a completed (Faraday) request and raises an error, if appropriate
       #
       # @param [Faraday::Env] env
       def on_complete(env)
+        @logger.call(env) if @logger
+
         if !json?(env) || UNEXPECTED_ERROR_STATUSES.include?(env.status)
           response = Response.new(env.response)
           raise DuffelAPI::Errors::Error.new(generate_error_data(env), response)
@@ -77,5 +84,5 @@ module DuffelAPI
   end
 end
 
-Faraday::Response.register_middleware raise_duffel_errors: DuffelAPI::
-    Middlewares::RaiseDuffelErrors
+Faraday::Response.register_middleware raise_and_log_duffel_errors: DuffelAPI::
+    Middlewares::RaiseAndLogDuffelErrors
