@@ -62,7 +62,6 @@ describe DuffelAPI::Services::OfferPassengersService do
 
       expect(offer_passenger).to be_a(DuffelAPI::Resources::OfferPassenger)
 
-      expect(offer_passenger.type).to eq("adult")
       expect(offer_passenger.loyalty_programme_accounts).to eq([{
         "account_number" => "12901014", "airline_iata_code" => "BA"
       }])

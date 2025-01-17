@@ -4,9 +4,6 @@
 module DuffelAPI
   module Resources
     class OfferPassenger < BaseResource
-      # @return [String, nil]
-      attr_reader :type
-
       # @return [Array<Hash>]
       attr_reader :loyalty_programme_accounts
 
@@ -25,7 +22,6 @@ module DuffelAPI
       def initialize(object, response = nil)
         @object = object
 
-        @type = object["type"]
         @loyalty_programme_accounts = object["loyalty_programme_accounts"]
         @id = object["id"]
         @given_name = object["given_name"]
@@ -33,6 +29,11 @@ module DuffelAPI
         @age = object["age"]
 
         super(object, response)
+      end
+
+      # Backwards compatibility for the old method name
+      def type
+        @object["type"]
       end
     end
   end

@@ -43,7 +43,7 @@ describe DuffelAPI::Services::OffersService do
 
       offer = get_list_response.records.first
 
-      expect(offer.allowed_passenger_identity_document_types).to eq([])
+      expect(offer.supported_passenger_identity_document_types).to eq([])
       expect(offer.available_services).to be_nil
       expect(offer.base_amount).to eq("414.28")
       expect(offer.base_currency).to eq("GBP")
@@ -149,7 +149,7 @@ describe DuffelAPI::Services::OffersService do
       expect(records.map(&:class).uniq).to eq([DuffelAPI::Resources::Offer])
       offer = records.first
 
-      expect(offer.allowed_passenger_identity_document_types).to eq([])
+      expect(offer.supported_passenger_identity_document_types).to eq([])
       expect(offer.available_services).to be_nil
       expect(offer.base_amount).to eq("414.28")
       expect(offer.base_currency).to eq("GBP")
@@ -243,7 +243,7 @@ describe DuffelAPI::Services::OffersService do
 
       expect(offer).to be_a(DuffelAPI::Resources::Offer)
 
-      expect(offer.allowed_passenger_identity_document_types).to eq(["passport"])
+      expect(offer.supported_passenger_identity_document_types).to eq(["passport"])
       expect(offer.available_services).to eq([])
       expect(offer.base_amount).to eq("311.00")
       expect(offer.base_currency).to eq("GBP")

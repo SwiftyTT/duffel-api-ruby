@@ -265,7 +265,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "414.28",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -551,7 +551,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -837,7 +837,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -1123,7 +1123,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1266.67",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -1385,7 +1385,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "414.29",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -1647,7 +1647,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "414.28",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -1909,7 +1909,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "417.69",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -2171,7 +2171,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "414.28",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -2457,7 +2457,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -2743,7 +2743,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -3005,7 +3005,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "414.29",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -3267,7 +3267,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "414.29",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -3553,7 +3553,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -3839,7 +3839,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -4125,7 +4125,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -4411,7 +4411,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -4697,7 +4697,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -4983,7 +4983,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "284.12",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -5269,7 +5269,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -5555,7 +5555,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -5817,7 +5817,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "414.28",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -6103,7 +6103,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -6389,7 +6389,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.263399Z",
@@ -6675,7 +6675,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "404.07",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -6971,7 +6971,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5759.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -7267,7 +7267,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1266.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -7563,7 +7563,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5849.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -7859,7 +7859,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1316.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -8155,7 +8155,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5669.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -8451,7 +8451,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5709.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -8747,7 +8747,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1366.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -9043,7 +9043,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5669.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -9339,7 +9339,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1266.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -9635,7 +9635,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1466.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -9931,7 +9931,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1316.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -10227,7 +10227,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1366.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -10523,7 +10523,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1536.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -10819,7 +10819,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1606.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -11115,7 +11115,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1266.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -11411,7 +11411,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5709.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -11707,7 +11707,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5669.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -12003,7 +12003,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1466.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -12299,7 +12299,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1366.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -12595,7 +12595,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1316.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -12891,7 +12891,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1606.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -13187,7 +13187,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1536.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -13483,7 +13483,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1266.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -13779,7 +13779,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5669.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -14075,7 +14075,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "5709.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         },
         {
             "updated_at": "2021-12-21T15:10:13.937496Z",
@@ -14371,7 +14371,7 @@
             },
             "base_currency": "GBP",
             "base_amount": "1316.00",
-            "allowed_passenger_identity_document_types": []
+            "supported_passenger_identity_document_types": []
         }
     ]
 }
